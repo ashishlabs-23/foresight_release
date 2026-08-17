@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ForeSight AI — Decision Lab</title>
+<meta name="description" content="ForeSight AI Blackjack decision analysis and feedback lab.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body class="theme-emerald">
+<canvas id="confetti-canvas"></canvas>
+
+<div id="app">
+<header class="topbar">
+  <div class="brand"><div class="brand-mark">F</div><div><h1>ForeSight <span>AI</span></h1><p>Decision Intelligence Lab</p></div></div>
+  <div class="top-actions">
+    <button id="btn-sound" class="btn ghost icon-btn" onclick="toggleSound()">🔊 Sound ON</button>
+    <button id="btn-felt-theme" class="btn ghost icon-btn" onclick="toggleFeltTheme()">🎨 Felt Theme</button>
+    <div class="status-indicator"><span class="dot"></span><span>Checking backend…</span></div>
+    <button id="btn-reset" class="btn ghost">New Session <kbd>N</kbd></button>
+  </div>
+</header>
+
+<div id="error-banner" class="toast hidden"></div>
+<div id="success-banner" class="toast success hidden"></div>
+
+<!-- Workflow Stepper -->
+<nav class="workflow-stepper">
+  <div class="step-item active" id="step-1"><span class="step-num">01</span> VISIBLE CARDS</div>
+  <div class="step-arrow">→</div>
+  <div class="step-item" id="step-2"><span class="step-num">02</span> AI ANALYSIS</div>
+  <div class="step-arrow">→</div>
+  <div class="step-item" id="step-3"><span class="step-num">03</span> ACTION FEEDBACK</div>
+  <div class="step-arrow">→</div>
+  <div class="step-item" id="step-4"><span class="step-num">04</span> DEALER RESOLUTION</div>
+</nav>
+
+<main class="workspace">
+<aside class="left-column">
+  <section class="panel setup-card">
+    <div class="section-title"><div><span class="kicker">01 · SETUP</span><h2>Game state</h2></div><span class="live-badge">LIVE</span></div>
+    <div class="rules-grid">
+      <label>Decks<select id="config-decks"><option>1</option><option>2</option><option>4</option><option selected>6</option><option>8</option></select></label>
+      <label>Soft 17<select id="config-s17"><option value="stand" selected>Stand</option><option value="hit">Hit</option></select></label>
+      <label>Double after split<select id="config-das"><option value="true" selected>Allowed</option><option value="false">Blocked</option></select></label>
+      <label>Surrender<select id="config-surrender"><option value="late" selected>Late</option><option value="early">Early</option><option value="none">None</option></select></label>
+    </div>
+  </section>
+
+  <section class="panel input-card">
+    <div class="section-title"><div><span class="kicker">02 · VISIBLE CARDS</span><h2>Build the table</h2></div></div>
+    <div class="input-block"><div class="input-label"><span>Dealer up-card</span><button class="tiny" onclick="clearDealer()">Clear</button></div><div id="input-dealer-cards" class="mini-cards empty"><span>Select a card below</span></div><div id="selector-dealer" class="rank-grid"></div></div>
+    <div class="input-block"><div class="input-label"><span>Your opening hand</span><button class="tiny" onclick="clearPlayer()">Clear</button></div><div id="input-player-cards" class="mini-cards empty"><span>Select two cards below</span></div><div id="selector-player" class="rank-grid"></div></div>
+    <button id="btn-analyze" class="btn primary start-btn">Analyze this hand <span>→</span></button>
+  </section>
+
+  <section class="panel history-card"><div class="section-title"><div><span class="kicker">RECENT</span><h2>Decision history</h2></div></div><ul id="history-list" class="history-list"><li class="history-empty">No decisions yet.</li></ul></section>
+</aside>
+
+<section class="center-column">
+  <section class="hero panel"><div><span class="kicker">FORESIGHT DECISION ENGINE</span><h2>See the decision. <em>Understand the why.</em></h2><p>Composition-aware analysis evaluates the visible shoe and current rules before recommending an action.</p></div><div class="hero-orbit"><div class="orbit-core">EV</div><span class="orbit-dot d1"></span><span class="orbit-dot d2"></span><span class="orbit-dot d3"></span></div></section>
+
+  <div id="empty-state" class="panel empty-state"><div class="empty-icon">♢</div><h2>Ready for analysis</h2><p>Choose the dealer up-card and your two opening cards, then start the analysis.</p></div>
+  <div id="ai-loading" class="panel loading hidden"><div class="loader"></div><div><b>Calculating exact decision values…</b><span>Enumerating the visible shoe composition</span></div></div>
+
+  <section id="session-view" class="hidden">
+    <div class="table-panel panel">
+      <div class="table-head"><div><span class="kicker">ACTIVE SESSION</span><h2>Decision table</h2></div><span id="session-chip" class="session-chip">SESSION</span></div>
+      <div class="felt">
+        <div class="table-rules-watermark">BLACKJACK PAYS 3 TO 2 · DEALER MUST DRAW TO 16 AND STAND ON ALL 17S</div>
+        <div class="dealer-zone"><span class="zone-label">DEALER</span><div id="session-dealer-cards" class="playing-cards"></div></div>
+        <div class="table-divider"></div>
+        <div id="player-hands-container" class="hands-row"></div>
+      </div>
+    </div>
+
+    <div id="active-hand-panel" class="decision-layout hidden">
+      <div class="panel recommendation-card"><div class="recommendation-top"><span class="kicker">BEST DECISION</span><span id="support-badge" class="support-badge">EXACT</span></div><div id="rec-action" class="rec-action">STAND</div><p id="rec-reason">Calculating…</p><div class="decision-metrics"><div><span>Decision margin</span><b id="m-margin">0.000</b></div><div><span>Uncertainty</span><b id="m-uncertainty">0.0%</b></div><div><span>Risk</span><b id="m-risk">LOW</b></div></div></div>
+      <div class="panel analysis-card"><div class="card-head"><div><span class="kicker">ACTION VALUES</span><h3>Compare every legal move</h3></div></div><ul id="ev-list" class="ev-list"></ul></div>
+      <div class="panel feedback-card"><div class="feedback-head"><div><span class="kicker">FEEDBACK LOOP</span><h3>What did you do?</h3><p>Your action is recorded so the decision can be evaluated later.</p></div><span id="feedback-state" class="feedback-state">Waiting</span></div><div id="action-controls" class="action-grid"></div></div>
+    </div>
+
+    <div id="next-card-section" class="panel next-card hidden"><div><span class="kicker">NEXT CARD</span><h3>What card was dealt?</h3><p>Choose the rank actually dealt to the active hand.</p></div><div id="selector-next" class="rank-grid large"></div></div>
+
+    <div id="resolution-section" class="panel resolution hidden">
+      <div class="resolution-icon">✓</div>
+      <div class="resolution-copy">
+        <span class="kicker">SESSION RESOLUTION & DEALER HAND</span>
+        <h2>Enter Dealer's Cards</h2>
+        <p>Select the dealer's hole card and any additional cards dealt to the dealer. The system will automatically calculate and pre-select the final outcome for each hand.</p>
+      </div>
+
+      <div class="dealer-final-card-block" style="grid-column:1/-1; background:#090d16; border:1px solid #1e293b; border-radius:14px; padding:18px; margin:10px 0;">
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px;">
+          <span style="font-size:11px; color:#94a3b8; font-weight:800;">DEALER FULL HAND</span>
+          <span id="dealer-total-badge" style="font-size:11px; color:var(--blue); font-weight:800;">Total: —</span>
+        </div>
+        <div id="dealer-cards-display" class="playing-cards" style="justify-content:flex-start; margin-bottom:14px; min-height:68px;"></div>
+        <div style="font-size:11px; color:#64748b; margin-bottom:8px; font-weight:700;">Add next dealer card (hole card / hit):</div>
+        <div id="selector-dealer-final" class="rank-grid large"></div>
+      </div>
+
+      <div id="final-results-container" class="results-grid"></div>
+      <button id="btn-submit-results" class="btn primary close-session">Submit results & close session</button>
+    </div>
+  </section>
+</section>
+
+<aside class="right-column">
+  <section class="panel insight-card"><div class="section-title"><div><span class="kicker">ENGINE STATUS</span><h2>Decision quality</h2></div></div><div class="quality-ring"><div><strong id="quality-value">EXACT</strong><span>method</span></div></div><div class="quality-list"><div><span>Composition</span><b>Enabled</b></div><div><span>Rules aware</span><b>Enabled</b></div><div><span>Feedback capture</span><b id="feedback-quality">Ready</b></div></div></section>
+  <section class="panel tips-card"><span class="kicker">HOW IT WORKS</span><h2>Three steps</h2><ol><li><b>Build</b><span>Enter only the cards you can see.</span></li><li><b>Analyze</b><span>ForeSight compares legal actions using the current shoe composition.</span></li><li><b>Feedback</b><span>Record your real action and final result to measure performance.</span></li></ol></section>
+  <section class="panel session-info"><span class="kicker">SESSION</span><div class="session-stat"><span>ID</span><code id="session-id">—</code></div><button class="btn ghost full" onclick="openSessionHelp()">Session help</button></section>
+</aside>
+</main>
+
+<div id="detail-modal" class="modal hidden">
+  <div class="modal-box" style="width:min(680px,100%); max-height:88vh; overflow-y:auto;">
+    <button class="modal-close" onclick="closeDetail()">×</button>
+    <span class="kicker">SESSION RECORD & REAL CARDS</span>
+    <h2 id="detail-title" style="margin-bottom:14px;">Decision History Detail</h2>
+    
+    <div class="felt" style="min-height:auto; padding:22px; margin:0 0 16px;">
+      <div class="dealer-zone">
+        <span class="zone-label">DEALER HAND</span>
+        <div id="detail-dealer-cards" class="playing-cards"></div>
+        <span id="detail-dealer-total" style="font-size:11px; color:#a7f3d0; margin-top:6px; font-weight:800;">Total: —</span>
+      </div>
+      <div class="table-divider" style="margin:14px 0;"></div>
+      <div class="hands-row" style="flex-direction:column; gap:12px;">
+        <div class="hand-box active" style="min-width:auto; width:100%; text-align:center;">
+          <h4 style="margin-bottom:8px; color:#d4e1f0;">PLAYER HAND</h4>
+          <div id="detail-player-cards" class="hand-cards"></div>
+          <span id="detail-player-total" style="font-size:11px; color:#a7f3d0; display:block; margin-top:6px; font-weight:800;">Total: —</span>
+        </div>
+      </div>
+    </div>
+
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-bottom:16px;">
+      <div style="background:#090d16; border:1px solid #1e293b; padding:14px; border-radius:12px;">
+        <span style="font-size:9px; color:#64748b; text-transform:uppercase; letter-spacing:1.5px; font-weight:900;">AI Recommendation</span>
+        <b id="detail-rec-action" style="display:block; font-size:18px; color:var(--green); margin-top:4px; font-weight:900;">—</b>
+      </div>
+      <div style="background:#090d16; border:1px solid #1e293b; padding:14px; border-radius:12px;">
+        <span style="font-size:9px; color:#64748b; text-transform:uppercase; letter-spacing:1.5px; font-weight:900;">User Action Taken</span>
+        <b id="detail-user-action" style="display:block; font-size:18px; color:var(--blue); margin-top:4px; font-weight:900;">—</b>
+      </div>
+    </div>
+
+    <div style="background:#090d16; border:1px solid #1e293b; padding:16px; border-radius:14px; margin-bottom:16px;">
+      <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
+        <span style="font-size:11px; font-weight:800; color:#94a3b8;">Final Session Result</span>
+        <span id="detail-final-result" class="session-chip" style="font-weight:900; font-size:11px; background:#064e3b; color:#6ee7b7; border-color:#059669;">—</span>
+      </div>
+      <span style="font-size:10px; color:#64748b; display:block; margin-bottom:8px; font-weight:700;">Action Expected Values (EV):</span>
+      <ul id="detail-ev-list" class="ev-list" style="margin-top:4px;"></ul>
+    </div>
+
+    <details style="border:1px solid #1e293b; border-radius:12px; padding:12px; background:#090d16;">
+      <summary style="font-size:11px; color:#64748b; cursor:pointer; font-weight:800;">View Raw Metadata JSON</summary>
+      <pre id="detail-content" style="margin-top:10px; max-height:180px;"></pre>
+    </details>
+  </div>
+</div>
+
+<div id="help-modal" class="modal hidden"><div class="modal-box"><button class="modal-close" onclick="closeSessionHelp()">×</button><span class="kicker">SESSION FLOW</span><h2>How feedback works</h2><p>1. Choose your real action. 2. Enter the card if the action needs one. 3. Enter dealer's hole card and hit cards. The system automatically calculates win/loss/push/blackjack. 4. Submit results to close the session.</p></div></div>
+<script src="app.js"></script>
+</body></html>
