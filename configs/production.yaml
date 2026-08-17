@@ -1,0 +1,23 @@
+# =============================================================================
+# Blackjack AI — Production Overrides
+# =============================================================================
+# Merges on top of default.yaml when APP_ENV=production.
+# NOTE: No secrets in this file. Credentials come from environment variables.
+# =============================================================================
+
+app:
+  env: "production"
+  debug: false
+
+logging:
+  level: "INFO"
+  format: "json"                  # structured JSON for log aggregators
+
+simulation:
+  default_num_hands: 10000
+
+api:
+  docs_url: null                  # disable Swagger UI in production
+  redoc_url: null                 # disable ReDoc in production
+  cors_origins:
+    - "https://your-frontend-domain.com"   # replace with real domain in deployment

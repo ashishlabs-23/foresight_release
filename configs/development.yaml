@@ -1,0 +1,24 @@
+# =============================================================================
+# Blackjack AI — Development Overrides
+# =============================================================================
+# Merges on top of default.yaml when APP_ENV=development.
+# =============================================================================
+
+app:
+  env: "development"
+  debug: true
+
+logging:
+  level: "DEBUG"
+  format: "console"               # human-readable in dev
+
+simulation:
+  default_num_hands: 100          # small runs during development
+  seed: 42                        # reproducible during dev
+
+api:
+  cors_origins:
+    - "http://localhost:3000"
+    - "http://localhost:5173"
+    - "http://127.0.0.1:3000"
+    - "http://127.0.0.1:5173"

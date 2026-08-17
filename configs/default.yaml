@@ -1,0 +1,57 @@
+# =============================================================================
+# Blackjack AI — Default Configuration
+# =============================================================================
+# These are the baseline values used across all environments.
+# Environment-specific files (development.yaml, production.yaml) override these.
+# Values can also be overridden by environment variables (see backend/app/core/config.py).
+# =============================================================================
+
+app:
+  name: "Blackjack AI"
+  version: "0.1.0"
+  description: "Reinforcement learning Blackjack agent"
+  env: "development"                # overridden per environment
+  host: "0.0.0.0"
+  port: 8000
+  debug: false
+
+logging:
+  level: "INFO"                     # DEBUG | INFO | WARNING | ERROR | CRITICAL
+  format: "json"                    # json | console
+  log_file: "logs/blackjack.log"    # set to null to disable file logging
+
+simulation:
+  default_num_hands: 1000
+  default_strategy: "basic"         # basic | random
+  default_num_decks: 6
+  reshuffle_penetration: 0.75
+  seed: null                        # null = random; set int for reproducibility
+
+rules:
+  dealer_stand_rule: "S17"          # S17 (stand soft 17) | H17 (hit soft 17)
+  blackjack_payout: "3:2"           # 3:2 | 6:5
+  allow_double_after_split: true
+  allow_resplit_aces: false
+  allow_surrender: true
+  max_splits: 3
+
+ml:
+  # Placeholders — populated in Phase 3
+  model_type: null
+  learning_rate: 0.001
+  batch_size: 64
+  gamma: 0.99                       # discount factor
+  epsilon_start: 1.0
+  epsilon_end: 0.01
+  epsilon_decay: 0.995
+  training_episodes: 100000
+  evaluation_episodes: 10000
+  model_save_path: "artifacts/models/"
+
+api:
+  prefix: "/api/v1"
+  docs_url: "/docs"
+  redoc_url: "/redoc"
+  cors_origins:
+    - "http://localhost:3000"
+    - "http://localhost:5173"
