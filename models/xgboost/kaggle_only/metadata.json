@@ -1,0 +1,61 @@
+{
+    "model_version": "kaggle_only",
+    "training_timestamp": "2026-08-10T13:04:40.556386",
+    "training_time_seconds": 1.0344623000128195,
+    "hyperparameters": {
+        "objective": "reg:squarederror",
+        "eval_metric": "rmse",
+        "max_depth": 6,
+        "eta": 0.1,
+        "subsample": 0.8,
+        "colsample_bytree": 0.8,
+        "seed": 42
+    },
+    "features": {
+        "action_encoding": {
+            "hit": [
+                1,
+                0,
+                0,
+                0,
+                0
+            ],
+            "stand": [
+                0,
+                1,
+                0,
+                0,
+                0
+            ],
+            "double": [
+                0,
+                0,
+                1,
+                0,
+                0
+            ],
+            "split": [
+                0,
+                0,
+                0,
+                1,
+                0
+            ],
+            "surrender": [
+                0,
+                0,
+                0,
+                0,
+                1
+            ]
+        }
+    },
+    "metrics": {
+        "test_mse": 0.979160487651825,
+        "test_mae": 0.8184965252876282,
+        "best_iteration": 58
+    },
+    "row_counts": {
+        "train": 526469
+    }
+}

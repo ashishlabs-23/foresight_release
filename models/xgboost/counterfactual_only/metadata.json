@@ -1,0 +1,61 @@
+{
+    "model_version": "counterfactual_only",
+    "training_timestamp": "2026-08-10T13:04:45.563232",
+    "training_time_seconds": 0.10336369997821748,
+    "hyperparameters": {
+        "objective": "reg:squarederror",
+        "eval_metric": "rmse",
+        "max_depth": 6,
+        "eta": 0.1,
+        "subsample": 0.8,
+        "colsample_bytree": 0.8,
+        "seed": 42
+    },
+    "features": {
+        "action_encoding": {
+            "hit": [
+                1,
+                0,
+                0,
+                0,
+                0
+            ],
+            "stand": [
+                0,
+                1,
+                0,
+                0,
+                0
+            ],
+            "double": [
+                0,
+                0,
+                1,
+                0,
+                0
+            ],
+            "split": [
+                0,
+                0,
+                0,
+                1,
+                0
+            ],
+            "surrender": [
+                0,
+                0,
+                0,
+                0,
+                1
+            ]
+        }
+    },
+    "metrics": {
+        "test_mse": 1.4390076398849487,
+        "test_mae": 1.0338793992996216,
+        "best_iteration": 3
+    },
+    "row_counts": {
+        "train": 151000
+    }
+}

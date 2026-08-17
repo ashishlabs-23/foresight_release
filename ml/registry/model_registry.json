@@ -1,0 +1,53 @@
+{
+    "active_production": "xgboost_v16",
+    "models": {
+        "xgboost_v16": {
+            "version": "v16",
+            "type": "xgboost",
+            "status": "PRODUCTION",
+            "model_hash": "a1b2c3d4e5f60708090a",
+            "feature_schema": "v16",
+            "feature_schema_hash": "f1e2d3c4b5a6",
+            "calibration_version": "v1.0-exp",
+            "training_data_version": "v14_counterfactual",
+            "training_date": "2026-08-10T12:00:00Z",
+            "supported_rules": [
+                "6_deck",
+                "dealer_stands_soft_17",
+                "3_to_2_blackjack",
+                "double_any_two",
+                "split_allowed",
+                "surrender_allowed"
+            ],
+            "validation_metrics": {
+                "regret": 0.012,
+                "mae": 0.035,
+                "rmse": 0.045
+            }
+        },
+        "rl_v1_dqn": {
+            "version": "rl_v1_dqn",
+            "type": "dqn",
+            "status": "EXPERIMENTAL",
+            "model_hash": "0987654321abcdef",
+            "feature_schema": "v16",
+            "feature_schema_hash": "f1e2d3c4b5a6",
+            "calibration_version": "v1.0-exp",
+            "training_data_version": "v17_offline_rl",
+            "training_date": "2026-08-10T14:00:00Z",
+            "supported_rules": [
+                "6_deck",
+                "dealer_stands_soft_17",
+                "3_to_2_blackjack",
+                "double_any_two",
+                "split_allowed",
+                "surrender_allowed"
+            ],
+            "validation_metrics": {
+                "regret": 0.014,
+                "mae": 0.045,
+                "rmse": 0.055
+            }
+        }
+    }
+}

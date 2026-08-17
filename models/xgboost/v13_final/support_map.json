@@ -1,0 +1,1181 @@
+{
+    "Hard 10 vs 2": {
+        "double": 1022,
+        "hit": 1178,
+        "stand": 1000,
+        "surrender": 1000
+    },
+    "Hard 10 vs 3": {
+        "double": 1046,
+        "hit": 1169,
+        "stand": 1000,
+        "surrender": 1000
+    },
+    "Hard 10 vs 4": {
+        "double": 1058,
+        "hit": 1182,
+        "stand": 1000,
+        "surrender": 1000
+    },
+    "Hard 10 vs 5": {
+        "double": 1123,
+        "hit": 1167,
+        "stand": 1000,
+        "surrender": 1000
+    },
+    "Hard 10 vs 6": {
+        "double": 1138,
+        "hit": 1184,
+        "stand": 1000,
+        "surrender": 1000
+    },
+    "Hard 10 vs 7": {
+        "double": 1126,
+        "hit": 1171,
+        "stand": 1000,
+        "surrender": 1000
+    },
+    "Hard 10 vs 8": {
+        "double": 1107,
+        "hit": 1221,
+        "stand": 1000,
+        "surrender": 1000
+    },
+    "Hard 10 vs 9": {
+        "double": 1113,
+        "hit": 1218,
+        "stand": 1000,
+        "surrender": 1000
+    },
+    "Hard 10 vs A": {
+        "double": 1000,
+        "hit": 1910,
+        "stand": 1000,
+        "surrender": 1000
+    },
+    "Hard 10 vs T": {
+        "double": 1000,
+        "hit": 4957,
+        "stand": 1000,
+        "surrender": 1000
+    },
+    "Hard 11 vs 2": {
+        "double": 1536,
+        "hit": 263
+    },
+    "Hard 11 vs 3": {
+        "double": 1483,
+        "hit": 175
+    },
+    "Hard 11 vs 4": {
+        "double": 1519,
+        "hit": 195
+    },
+    "Hard 11 vs 5": {
+        "double": 1523,
+        "hit": 184
+    },
+    "Hard 11 vs 6": {
+        "double": 1385,
+        "hit": 176
+    },
+    "Hard 11 vs 7": {
+        "double": 1481,
+        "hit": 281
+    },
+    "Hard 11 vs 8": {
+        "double": 1465,
+        "hit": 307
+    },
+    "Hard 11 vs 9": {
+        "double": 1470,
+        "hit": 305
+    },
+    "Hard 11 vs A": {
+        "double": 940,
+        "hit": 194
+    },
+    "Hard 11 vs T": {
+        "double": 5440,
+        "hit": 1182
+    },
+    "Hard 12 vs 2": {
+        "double": 1000,
+        "hit": 3991,
+        "stand": 2000,
+        "surrender": 2000
+    },
+    "Hard 12 vs 3": {
+        "double": 1000,
+        "hit": 3953,
+        "stand": 2000,
+        "surrender": 2000
+    },
+    "Hard 12 vs 4": {
+        "double": 1000,
+        "hit": 2000,
+        "stand": 3888,
+        "surrender": 2000
+    },
+    "Hard 12 vs 5": {
+        "double": 1000,
+        "hit": 2000,
+        "stand": 3794,
+        "surrender": 2000
+    },
+    "Hard 12 vs 6": {
+        "double": 1000,
+        "hit": 2000,
+        "stand": 3775,
+        "surrender": 2000
+    },
+    "Hard 12 vs 7": {
+        "double": 1000,
+        "hit": 4120,
+        "stand": 2000,
+        "surrender": 2000
+    },
+    "Hard 12 vs 8": {
+        "double": 1000,
+        "hit": 3971,
+        "stand": 2000,
+        "surrender": 2000
+    },
+    "Hard 12 vs 9": {
+        "double": 1000,
+        "hit": 4158,
+        "stand": 2000,
+        "surrender": 2000
+    },
+    "Hard 12 vs A": {
+        "double": 2000,
+        "hit": 3210,
+        "stand": 2000,
+        "surrender": 2000
+    },
+    "Hard 12 vs T": {
+        "double": 1000,
+        "hit": 12095,
+        "stand": 2000,
+        "surrender": 2000
+    },
+    "Hard 13 vs 2": {
+        "double": 1000,
+        "hit": 1000,
+        "stand": 3250,
+        "surrender": 1000
+    },
+    "Hard 13 vs 3": {
+        "double": 1000,
+        "hit": 1000,
+        "stand": 3240,
+        "surrender": 1000
+    },
+    "Hard 13 vs 4": {
+        "double": 1000,
+        "hit": 1000,
+        "stand": 2944,
+        "surrender": 1000
+    },
+    "Hard 13 vs 5": {
+        "double": 1000,
+        "hit": 1000,
+        "stand": 2698,
+        "surrender": 1000
+    },
+    "Hard 13 vs 6": {
+        "double": 1000,
+        "hit": 1000,
+        "stand": 2733,
+        "surrender": 1000
+    },
+    "Hard 13 vs 7": {
+        "double": 1000,
+        "hit": 3365,
+        "stand": 1000,
+        "surrender": 1000
+    },
+    "Hard 13 vs 8": {
+        "double": 1000,
+        "hit": 3478,
+        "stand": 1000,
+        "surrender": 1000
+    },
+    "Hard 13 vs 9": {
+        "double": 1000,
+        "hit": 3413,
+        "stand": 1000,
+        "surrender": 1000
+    },
+    "Hard 13 vs A": {
+        "double": 1000,
+        "hit": 2486,
+        "stand": 1000,
+        "surrender": 1000
+    },
+    "Hard 13 vs T": {
+        "double": 1000,
+        "hit": 13276,
+        "stand": 1000,
+        "surrender": 1000
+    },
+    "Hard 14 vs 2": {
+        "double": 1000,
+        "hit": 1000,
+        "stand": 2965,
+        "surrender": 1000
+    },
+    "Hard 14 vs 3": {
+        "double": 1000,
+        "hit": 1000,
+        "stand": 2869,
+        "surrender": 1000
+    },
+    "Hard 14 vs 4": {
+        "double": 1000,
+        "hit": 1000,
+        "stand": 2461,
+        "surrender": 1000
+    },
+    "Hard 14 vs 5": {
+        "double": 1000,
+        "hit": 1000,
+        "stand": 2404,
+        "surrender": 1000
+    },
+    "Hard 14 vs 6": {
+        "double": 1000,
+        "hit": 1000,
+        "stand": 2441,
+        "surrender": 1000
+    },
+    "Hard 14 vs 7": {
+        "double": 1000,
+        "hit": 3207,
+        "stand": 1000,
+        "surrender": 1000
+    },
+    "Hard 14 vs 8": {
+        "double": 1000,
+        "hit": 3319,
+        "stand": 1000,
+        "surrender": 1000
+    },
+    "Hard 14 vs 9": {
+        "double": 1000,
+        "hit": 3326,
+        "stand": 1000,
+        "surrender": 1000
+    },
+    "Hard 14 vs A": {
+        "double": 1000,
+        "hit": 2420,
+        "stand": 1000,
+        "surrender": 1000
+    },
+    "Hard 14 vs T": {
+        "double": 1000,
+        "hit": 12906,
+        "stand": 1000,
+        "surrender": 1000
+    },
+    "Hard 15 vs 2": {
+        "stand": 3010
+    },
+    "Hard 15 vs 3": {
+        "stand": 2934
+    },
+    "Hard 15 vs 4": {
+        "stand": 2470
+    },
+    "Hard 15 vs 5": {
+        "stand": 2525
+    },
+    "Hard 15 vs 6": {
+        "stand": 2432
+    },
+    "Hard 15 vs 7": {
+        "hit": 3724
+    },
+    "Hard 15 vs 8": {
+        "hit": 3663
+    },
+    "Hard 15 vs 9": {
+        "hit": 3647
+    },
+    "Hard 15 vs A": {
+        "hit": 1100,
+        "surrender": 1515
+    },
+    "Hard 15 vs T": {
+        "hit": 5994,
+        "surrender": 7966
+    },
+    "Hard 16 vs 2": {
+        "stand": 2676
+    },
+    "Hard 16 vs 3": {
+        "stand": 2462
+    },
+    "Hard 16 vs 4": {
+        "stand": 2169
+    },
+    "Hard 16 vs 5": {
+        "stand": 2153
+    },
+    "Hard 16 vs 6": {
+        "stand": 2033
+    },
+    "Hard 16 vs 7": {
+        "hit": 3343
+    },
+    "Hard 16 vs 8": {
+        "hit": 3513
+    },
+    "Hard 16 vs 9": {
+        "hit": 1741,
+        "surrender": 1889
+    },
+    "Hard 16 vs A": {
+        "hit": 1153,
+        "surrender": 1291
+    },
+    "Hard 16 vs T": {
+        "hit": 6444,
+        "surrender": 6579
+    },
+    "Hard 17 vs 2": {
+        "stand": 2694
+    },
+    "Hard 17 vs 3": {
+        "stand": 2316
+    },
+    "Hard 17 vs 4": {
+        "stand": 2168
+    },
+    "Hard 17 vs 5": {
+        "stand": 2165
+    },
+    "Hard 17 vs 6": {
+        "stand": 2181
+    },
+    "Hard 17 vs 7": {
+        "stand": 3646
+    },
+    "Hard 17 vs 8": {
+        "stand": 3882
+    },
+    "Hard 17 vs 9": {
+        "stand": 3647
+    },
+    "Hard 17 vs A": {
+        "stand": 1250,
+        "surrender": 1251
+    },
+    "Hard 17 vs T": {
+        "stand": 13527
+    },
+    "Hard 18 vs 2": {
+        "stand": 2179
+    },
+    "Hard 18 vs 3": {
+        "stand": 2060
+    },
+    "Hard 18 vs 4": {
+        "stand": 1804
+    },
+    "Hard 18 vs 5": {
+        "stand": 1676
+    },
+    "Hard 18 vs 6": {
+        "stand": 1712
+    },
+    "Hard 18 vs 7": {
+        "stand": 3210
+    },
+    "Hard 18 vs 8": {
+        "stand": 3181
+    },
+    "Hard 18 vs 9": {
+        "stand": 3279
+    },
+    "Hard 18 vs A": {
+        "stand": 2199
+    },
+    "Hard 18 vs T": {
+        "stand": 11979
+    },
+    "Hard 19 vs 2": {
+        "stand": 2173
+    },
+    "Hard 19 vs 3": {
+        "stand": 1735
+    },
+    "Hard 19 vs 4": {
+        "stand": 1537
+    },
+    "Hard 19 vs 5": {
+        "stand": 1499
+    },
+    "Hard 19 vs 6": {
+        "stand": 1548
+    },
+    "Hard 19 vs 7": {
+        "stand": 3229
+    },
+    "Hard 19 vs 8": {
+        "stand": 3168
+    },
+    "Hard 19 vs 9": {
+        "stand": 3012
+    },
+    "Hard 19 vs A": {
+        "stand": 2145
+    },
+    "Hard 19 vs T": {
+        "stand": 11006
+    },
+    "Hard 20 vs 2": {
+        "stand": 289
+    },
+    "Hard 20 vs 3": {
+        "stand": 262
+    },
+    "Hard 20 vs 4": {
+        "stand": 81
+    },
+    "Hard 20 vs 5": {
+        "stand": 76
+    },
+    "Hard 20 vs 6": {
+        "stand": 68
+    },
+    "Hard 20 vs 7": {
+        "stand": 1332
+    },
+    "Hard 20 vs 8": {
+        "stand": 1420
+    },
+    "Hard 20 vs 9": {
+        "stand": 1322
+    },
+    "Hard 20 vs A": {
+        "stand": 1070
+    },
+    "Hard 20 vs T": {
+        "stand": 5777
+    },
+    "Hard 21 vs 2": {
+        "stand": 2038
+    },
+    "Hard 21 vs 3": {
+        "stand": 1846
+    },
+    "Hard 21 vs 4": {
+        "stand": 1658
+    },
+    "Hard 21 vs 5": {
+        "stand": 1542
+    },
+    "Hard 21 vs 6": {
+        "stand": 1564
+    },
+    "Hard 21 vs 7": {
+        "stand": 3102
+    },
+    "Hard 21 vs 8": {
+        "stand": 3098
+    },
+    "Hard 21 vs 9": {
+        "stand": 3025
+    },
+    "Hard 21 vs A": {
+        "stand": 2026
+    },
+    "Hard 21 vs T": {
+        "stand": 11023
+    },
+    "Hard 5 vs 2": {
+        "hit": 355
+    },
+    "Hard 5 vs 3": {
+        "hit": 335
+    },
+    "Hard 5 vs 4": {
+        "hit": 344
+    },
+    "Hard 5 vs 5": {
+        "hit": 336
+    },
+    "Hard 5 vs 6": {
+        "hit": 356
+    },
+    "Hard 5 vs 7": {
+        "hit": 353
+    },
+    "Hard 5 vs 8": {
+        "hit": 379
+    },
+    "Hard 5 vs 9": {
+        "hit": 343
+    },
+    "Hard 5 vs A": {
+        "hit": 254
+    },
+    "Hard 5 vs T": {
+        "hit": 1313
+    },
+    "Hard 6 vs 2": {
+        "hit": 319
+    },
+    "Hard 6 vs 3": {
+        "hit": 362
+    },
+    "Hard 6 vs 4": {
+        "hit": 361
+    },
+    "Hard 6 vs 5": {
+        "hit": 348
+    },
+    "Hard 6 vs 6": {
+        "hit": 369
+    },
+    "Hard 6 vs 7": {
+        "hit": 377
+    },
+    "Hard 6 vs 8": {
+        "hit": 360
+    },
+    "Hard 6 vs 9": {
+        "hit": 401
+    },
+    "Hard 6 vs A": {
+        "hit": 223
+    },
+    "Hard 6 vs T": {
+        "hit": 1345
+    },
+    "Hard 7 vs 2": {
+        "hit": 784
+    },
+    "Hard 7 vs 3": {
+        "hit": 758
+    },
+    "Hard 7 vs 4": {
+        "hit": 720
+    },
+    "Hard 7 vs 5": {
+        "hit": 755
+    },
+    "Hard 7 vs 6": {
+        "hit": 762
+    },
+    "Hard 7 vs 7": {
+        "hit": 726
+    },
+    "Hard 7 vs 8": {
+        "hit": 822
+    },
+    "Hard 7 vs 9": {
+        "hit": 731
+    },
+    "Hard 7 vs A": {
+        "hit": 542
+    },
+    "Hard 7 vs T": {
+        "hit": 2902
+    },
+    "Hard 8 vs 2": {
+        "hit": 746
+    },
+    "Hard 8 vs 3": {
+        "hit": 804
+    },
+    "Hard 8 vs 4": {
+        "hit": 816
+    },
+    "Hard 8 vs 5": {
+        "hit": 786
+    },
+    "Hard 8 vs 6": {
+        "hit": 750
+    },
+    "Hard 8 vs 7": {
+        "hit": 766
+    },
+    "Hard 8 vs 8": {
+        "hit": 774
+    },
+    "Hard 8 vs 9": {
+        "hit": 790
+    },
+    "Hard 8 vs A": {
+        "hit": 541
+    },
+    "Hard 8 vs T": {
+        "hit": 3028
+    },
+    "Hard 9 vs 2": {
+        "hit": 1260
+    },
+    "Hard 9 vs 3": {
+        "double": 1099,
+        "hit": 110
+    },
+    "Hard 9 vs 4": {
+        "double": 1056,
+        "hit": 128
+    },
+    "Hard 9 vs 5": {
+        "double": 1087,
+        "hit": 103
+    },
+    "Hard 9 vs 6": {
+        "double": 1120,
+        "hit": 119
+    },
+    "Hard 9 vs 7": {
+        "hit": 1243
+    },
+    "Hard 9 vs 8": {
+        "hit": 1269
+    },
+    "Hard 9 vs 9": {
+        "hit": 1257
+    },
+    "Hard 9 vs A": {
+        "hit": 846
+    },
+    "Hard 9 vs T": {
+        "hit": 4499
+    },
+    "Pair 10,10 vs 2": {
+        "stand": 2970
+    },
+    "Pair 10,10 vs 3": {
+        "stand": 2933
+    },
+    "Pair 10,10 vs 4": {
+        "stand": 2947
+    },
+    "Pair 10,10 vs 5": {
+        "stand": 2922
+    },
+    "Pair 10,10 vs 6": {
+        "stand": 2917
+    },
+    "Pair 10,10 vs 7": {
+        "stand": 2956
+    },
+    "Pair 10,10 vs 8": {
+        "stand": 2976
+    },
+    "Pair 10,10 vs 9": {
+        "stand": 2872
+    },
+    "Pair 10,10 vs A": {
+        "stand": 2021
+    },
+    "Pair 10,10 vs T": {
+        "stand": 10768
+    },
+    "Pair 2,2 vs 2": {
+        "split": 170
+    },
+    "Pair 2,2 vs 3": {
+        "split": 176
+    },
+    "Pair 2,2 vs 4": {
+        "split": 191
+    },
+    "Pair 2,2 vs 5": {
+        "split": 170
+    },
+    "Pair 2,2 vs 6": {
+        "split": 178
+    },
+    "Pair 2,2 vs 7": {
+        "split": 213
+    },
+    "Pair 2,2 vs 8": {
+        "hit": 186
+    },
+    "Pair 2,2 vs 9": {
+        "hit": 173
+    },
+    "Pair 2,2 vs A": {
+        "hit": 111
+    },
+    "Pair 2,2 vs T": {
+        "hit": 647
+    },
+    "Pair 3,3 vs 2": {
+        "split": 167
+    },
+    "Pair 3,3 vs 3": {
+        "split": 158
+    },
+    "Pair 3,3 vs 4": {
+        "split": 159
+    },
+    "Pair 3,3 vs 5": {
+        "split": 192
+    },
+    "Pair 3,3 vs 6": {
+        "split": 201
+    },
+    "Pair 3,3 vs 7": {
+        "split": 189
+    },
+    "Pair 3,3 vs 8": {
+        "hit": 176
+    },
+    "Pair 3,3 vs 9": {
+        "hit": 187
+    },
+    "Pair 3,3 vs A": {
+        "hit": 128
+    },
+    "Pair 3,3 vs T": {
+        "hit": 658
+    },
+    "Pair 4,4 vs 2": {
+        "hit": 164
+    },
+    "Pair 4,4 vs 3": {
+        "hit": 186
+    },
+    "Pair 4,4 vs 4": {
+        "hit": 187
+    },
+    "Pair 4,4 vs 5": {
+        "split": 204
+    },
+    "Pair 4,4 vs 6": {
+        "split": 187
+    },
+    "Pair 4,4 vs 7": {
+        "hit": 187
+    },
+    "Pair 4,4 vs 8": {
+        "hit": 188
+    },
+    "Pair 4,4 vs 9": {
+        "hit": 173
+    },
+    "Pair 4,4 vs A": {
+        "hit": 107
+    },
+    "Pair 4,4 vs T": {
+        "hit": 633
+    },
+    "Pair 5,5 vs 2": {
+        "double": 166
+    },
+    "Pair 5,5 vs 3": {
+        "double": 176
+    },
+    "Pair 5,5 vs 4": {
+        "double": 178
+    },
+    "Pair 5,5 vs 5": {
+        "double": 159
+    },
+    "Pair 5,5 vs 6": {
+        "double": 185
+    },
+    "Pair 5,5 vs 7": {
+        "double": 189
+    },
+    "Pair 5,5 vs 8": {
+        "double": 191
+    },
+    "Pair 5,5 vs 9": {
+        "double": 142
+    },
+    "Pair 5,5 vs A": {
+        "hit": 112
+    },
+    "Pair 5,5 vs T": {
+        "hit": 673
+    },
+    "Pair 6,6 vs 2": {
+        "split": 366
+    },
+    "Pair 6,6 vs 3": {
+        "split": 358
+    },
+    "Pair 6,6 vs 4": {
+        "split": 318
+    },
+    "Pair 6,6 vs 5": {
+        "split": 379
+    },
+    "Pair 6,6 vs 6": {
+        "split": 339
+    },
+    "Pair 6,6 vs 7": {
+        "hit": 182,
+        "split": 188
+    },
+    "Pair 6,6 vs 8": {
+        "hit": 187,
+        "split": 179
+    },
+    "Pair 6,6 vs 9": {
+        "hit": 191,
+        "split": 194
+    },
+    "Pair 6,6 vs A": {
+        "hit": 117,
+        "split": 98
+    },
+    "Pair 6,6 vs T": {
+        "hit": 651,
+        "split": 663
+    },
+    "Pair 7,7 vs 2": {
+        "split": 158
+    },
+    "Pair 7,7 vs 3": {
+        "split": 190
+    },
+    "Pair 7,7 vs 4": {
+        "split": 186
+    },
+    "Pair 7,7 vs 5": {
+        "split": 156
+    },
+    "Pair 7,7 vs 6": {
+        "split": 188
+    },
+    "Pair 7,7 vs 7": {
+        "split": 168
+    },
+    "Pair 7,7 vs 8": {
+        "hit": 191
+    },
+    "Pair 7,7 vs 9": {
+        "hit": 178
+    },
+    "Pair 7,7 vs A": {
+        "hit": 128
+    },
+    "Pair 7,7 vs T": {
+        "hit": 591
+    },
+    "Pair 8,8 vs 2": {
+        "split": 177
+    },
+    "Pair 8,8 vs 3": {
+        "split": 183
+    },
+    "Pair 8,8 vs 4": {
+        "split": 166
+    },
+    "Pair 8,8 vs 5": {
+        "split": 193
+    },
+    "Pair 8,8 vs 6": {
+        "split": 161
+    },
+    "Pair 8,8 vs 7": {
+        "split": 161
+    },
+    "Pair 8,8 vs 8": {
+        "split": 173
+    },
+    "Pair 8,8 vs 9": {
+        "split": 183
+    },
+    "Pair 8,8 vs A": {
+        "surrender": 113
+    },
+    "Pair 8,8 vs T": {
+        "split": 636
+    },
+    "Pair 9,9 vs 2": {
+        "split": 183
+    },
+    "Pair 9,9 vs 3": {
+        "split": 182
+    },
+    "Pair 9,9 vs 4": {
+        "split": 181
+    },
+    "Pair 9,9 vs 5": {
+        "split": 188
+    },
+    "Pair 9,9 vs 6": {
+        "split": 164
+    },
+    "Pair 9,9 vs 7": {
+        "stand": 170
+    },
+    "Pair 9,9 vs 8": {
+        "split": 187
+    },
+    "Pair 9,9 vs 9": {
+        "split": 155
+    },
+    "Pair 9,9 vs A": {
+        "stand": 123
+    },
+    "Pair 9,9 vs T": {
+        "stand": 619
+    },
+    "Soft 13 vs 2": {
+        "hit": 376
+    },
+    "Soft 13 vs 3": {
+        "hit": 379
+    },
+    "Soft 13 vs 4": {
+        "hit": 373
+    },
+    "Soft 13 vs 5": {
+        "double": 385
+    },
+    "Soft 13 vs 6": {
+        "double": 347
+    },
+    "Soft 13 vs 7": {
+        "hit": 352
+    },
+    "Soft 13 vs 8": {
+        "hit": 400
+    },
+    "Soft 13 vs 9": {
+        "hit": 364
+    },
+    "Soft 13 vs A": {
+        "hit": 254
+    },
+    "Soft 13 vs T": {
+        "hit": 1349
+    },
+    "Soft 14 vs 2": {
+        "hit": 370
+    },
+    "Soft 14 vs 3": {
+        "hit": 390
+    },
+    "Soft 14 vs 4": {
+        "hit": 413
+    },
+    "Soft 14 vs 5": {
+        "double": 376
+    },
+    "Soft 14 vs 6": {
+        "double": 358
+    },
+    "Soft 14 vs 7": {
+        "hit": 421
+    },
+    "Soft 14 vs 8": {
+        "hit": 393
+    },
+    "Soft 14 vs 9": {
+        "hit": 381
+    },
+    "Soft 14 vs A": {
+        "hit": 255
+    },
+    "Soft 14 vs T": {
+        "hit": 1474
+    },
+    "Soft 15 vs 2": {
+        "hit": 443
+    },
+    "Soft 15 vs 3": {
+        "hit": 436
+    },
+    "Soft 15 vs 4": {
+        "double": 351,
+        "hit": 54
+    },
+    "Soft 15 vs 5": {
+        "double": 382
+    },
+    "Soft 15 vs 6": {
+        "double": 369
+    },
+    "Soft 15 vs 7": {
+        "hit": 445
+    },
+    "Soft 15 vs 8": {
+        "hit": 423
+    },
+    "Soft 15 vs 9": {
+        "hit": 448
+    },
+    "Soft 15 vs A": {
+        "hit": 284
+    },
+    "Soft 15 vs T": {
+        "hit": 1582
+    },
+    "Soft 16 vs 2": {
+        "hit": 483
+    },
+    "Soft 16 vs 3": {
+        "hit": 468
+    },
+    "Soft 16 vs 4": {
+        "double": 381,
+        "hit": 80
+    },
+    "Soft 16 vs 5": {
+        "double": 346,
+        "hit": 27
+    },
+    "Soft 16 vs 6": {
+        "double": 381,
+        "hit": 31
+    },
+    "Soft 16 vs 7": {
+        "hit": 477
+    },
+    "Soft 16 vs 8": {
+        "hit": 486
+    },
+    "Soft 16 vs 9": {
+        "hit": 476
+    },
+    "Soft 16 vs A": {
+        "hit": 316
+    },
+    "Soft 16 vs T": {
+        "hit": 1842
+    },
+    "Soft 17 vs 2": {
+        "hit": 496
+    },
+    "Soft 17 vs 3": {
+        "double": 357,
+        "hit": 145
+    },
+    "Soft 17 vs 4": {
+        "double": 364,
+        "hit": 99
+    },
+    "Soft 17 vs 5": {
+        "double": 385,
+        "hit": 28
+    },
+    "Soft 17 vs 6": {
+        "double": 381,
+        "hit": 38
+    },
+    "Soft 17 vs 7": {
+        "hit": 556
+    },
+    "Soft 17 vs 8": {
+        "hit": 567
+    },
+    "Soft 17 vs 9": {
+        "hit": 532
+    },
+    "Soft 17 vs A": {
+        "hit": 363
+    },
+    "Soft 17 vs T": {
+        "hit": 2003
+    },
+    "Soft 18 vs 2": {
+        "double": 362,
+        "stand": 209
+    },
+    "Soft 18 vs 3": {
+        "double": 370,
+        "stand": 222
+    },
+    "Soft 18 vs 4": {
+        "double": 376,
+        "stand": 120
+    },
+    "Soft 18 vs 5": {
+        "double": 422,
+        "stand": 74
+    },
+    "Soft 18 vs 6": {
+        "double": 350,
+        "stand": 68
+    },
+    "Soft 18 vs 7": {
+        "stand": 622
+    },
+    "Soft 18 vs 8": {
+        "stand": 640
+    },
+    "Soft 18 vs 9": {
+        "hit": 575
+    },
+    "Soft 18 vs A": {
+        "hit": 385
+    },
+    "Soft 18 vs T": {
+        "hit": 2281
+    },
+    "Soft 19 vs 2": {
+        "stand": 598
+    },
+    "Soft 19 vs 3": {
+        "stand": 569
+    },
+    "Soft 19 vs 4": {
+        "stand": 534
+    },
+    "Soft 19 vs 5": {
+        "stand": 463
+    },
+    "Soft 19 vs 6": {
+        "double": 373,
+        "stand": 56
+    },
+    "Soft 19 vs 7": {
+        "stand": 611
+    },
+    "Soft 19 vs 8": {
+        "stand": 592
+    },
+    "Soft 19 vs 9": {
+        "stand": 671
+    },
+    "Soft 19 vs A": {
+        "stand": 426
+    },
+    "Soft 19 vs T": {
+        "stand": 2412
+    },
+    "Soft 20 vs 2": {
+        "stand": 685
+    },
+    "Soft 20 vs 3": {
+        "stand": 509
+    },
+    "Soft 20 vs 4": {
+        "stand": 458
+    },
+    "Soft 20 vs 5": {
+        "stand": 365
+    },
+    "Soft 20 vs 6": {
+        "stand": 365
+    },
+    "Soft 20 vs 7": {
+        "stand": 631
+    },
+    "Soft 20 vs 8": {
+        "stand": 628
+    },
+    "Soft 20 vs 9": {
+        "stand": 665
+    },
+    "Soft 20 vs A": {
+        "stand": 430
+    },
+    "Soft 20 vs T": {
+        "stand": 2491
+    }
+}
